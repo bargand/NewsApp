@@ -16,14 +16,6 @@ export default class App extends Component {
           <Route element={<About />} path="/about" />
         </Routes>
       </BrowserRouter>
-
-      // <div>
-      //   <>
-      //   <Navbar/>
-      //   <h1>Hello {this.name} , how are you?</h1>
-      //   <News/>
-      //   </>
-      // </div>
     );
   }
 }
