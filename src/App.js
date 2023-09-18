@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
 
 export default class App extends Component {
   render() {
@@ -12,8 +11,110 @@ export default class App extends Component {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route element={<News pageSize={3} apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}/>} path="/" />
-          <Route element={<About />} path="/about" />
+          <Route
+            exact
+            element={
+              <News
+                key="general"
+                country={"in"}
+                pageSize={3}
+                category={"general"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="business"
+                country={"in"}
+                pageSize={3}
+                category={"business"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/business"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="entertainment"
+                country={"in"}
+                pageSize={3}
+                category={"entertainment"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/entertainment"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="general"
+                country={"in"}
+                pageSize={3}
+                category={"general"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/general"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="health"
+                country={"in"}
+                pageSize={3}
+                category={"health"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/health"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="science"
+                country={"in"}
+                pageSize={3}
+                category={"science"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/science"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="sports"
+                country={"in"}
+                pageSize={3}
+                category={"sports"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/sports"
+          />
+          <Route
+            exact
+            element={
+              <News
+                key="technology"
+                country={"in"}
+                pageSize={3}
+                category={"technology"}
+                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+              />
+            }
+            path="/technology"
+          />
         </Routes>
       </BrowserRouter>
     );
