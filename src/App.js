@@ -6,6 +6,8 @@ import News from "./components/News";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default class App extends Component {
+  pageSize= 6
+  apiKeyNew= "62f24983ca684d74813fb3d78c813be2"
   render() {
     return (
       <BrowserRouter>
@@ -17,9 +19,9 @@ export default class App extends Component {
               <News
                 key="general"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"general"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/"
@@ -30,9 +32,9 @@ export default class App extends Component {
               <News
                 key="business"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"business"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/business"
@@ -43,9 +45,9 @@ export default class App extends Component {
               <News
                 key="entertainment"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"entertainment"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/entertainment"
@@ -56,9 +58,9 @@ export default class App extends Component {
               <News
                 key="general"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"general"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/general"
@@ -69,9 +71,9 @@ export default class App extends Component {
               <News
                 key="health"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"health"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/health"
@@ -82,9 +84,9 @@ export default class App extends Component {
               <News
                 key="science"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"science"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/science"
@@ -95,9 +97,9 @@ export default class App extends Component {
               <News
                 key="sports"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"sports"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/sports"
@@ -108,9 +110,9 @@ export default class App extends Component {
               <News
                 key="technology"
                 country={"in"}
-                pageSize={3}
+                pageSize={this.pageSize}
                 category={"technology"}
-                apiKeyNew={"5ddcdb9b85b34239bdcbeef4fcf1d74a"}
+                apiKeyNew={this.apiKeyNew}
               />
             }
             path="/technology"
